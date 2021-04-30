@@ -14,6 +14,7 @@ else:
 
 age = input("What is your age? ")
 
+
 # user input crash avoider
 
 try:
@@ -44,9 +45,10 @@ time.sleep(1)
 print(f"We are happy to have you!")
 print("")
 time.sleep(1)
-
+print("")
 print("Get to work!")
 time.sleep(1)
+print("")
 print('But first help me with this: ')
 
 secret_number = 2
@@ -61,8 +63,13 @@ while guess_count < guess_limit:
             break
         else:
             print(f"Nope, {name} you got it wrong. Try again!")
-    except guess_count == guess_limit:
-        print("Sorry, you failed!")
+            print("")
+        if guess_count == guess_limit:
+            print("")
+            print("Sorry, you failed!")
+    except ValueError:
+        print("Not a valid number")
+        print("Task failed successfully.")
 
 
 class Human:
@@ -84,8 +91,11 @@ class Dan(Human):
 #user = Human({name})
 #print(user.name)
 #user.read()
-
-time.sleep(5)
+print("")
+print("Thank you for using this software. You may contact me on GitHub for suggestions at username: DDSNA.")
+print("")
+print("Program will close in 10 seconds, on its own.")
+time.sleep(10)
 
 
 
