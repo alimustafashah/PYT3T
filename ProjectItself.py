@@ -37,19 +37,15 @@ def age_check(age):
 age_check(age)
 
 
-print("")
 time.sleep(1)
-print(f"{name}, welcome to Home Office!")
+print(f"\n{name}, welcome to Home Office!")
 time.sleep(1)
 
-print(f"We are happy to have you!")
-print("")
+print(f"We are happy to have you!\n")
 time.sleep(1)
-print("")
-print("Get to work!")
+print("\nGet to work!")
 time.sleep(1)
-print("")
-print('But first help me with this: ')
+print('\nBut first help me with this: ')
 
 secret_number = 2
 guess_count = 0
@@ -62,11 +58,9 @@ while guess_count < guess_limit:
             print(f"Congratulations, {name}! You win!")
             break
         else:
-            print(f"Nope, {name} you got it wrong. Try again!")
-            print("")
+            print(f"Nope, {name} you got it wrong. Try again!\n")
         if guess_count == guess_limit:
-            print("")
-            print("Sorry, you failed!")
+            print("\nSorry, you failed!")
     except ValueError:
         print("Not a valid number")
         print("Task failed successfully.")
@@ -91,10 +85,8 @@ class Dan(Human):
 #user = Human({name})
 #print(user.name)
 #user.read()
-print("")
-print("Thank you for using this software. You may contact me on GitHub for suggestions at username: DDSNA.")
-print("")
-print("Program will close in 10 seconds, on its own.")
+print("\nThank you for using this software. You may contact me on GitHub for suggestions at username: DDSNA.")
+print("\nProgram will close in 10 seconds, on its own.")
 time.sleep(10)
 
 
